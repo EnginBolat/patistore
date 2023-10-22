@@ -6,7 +6,7 @@ export default StyleSheet.create({
         justifyContent: "center",
         alignItems: 'center',
         backgroundColor: '#eceff1',
-        height: Dimensions.get('window').height / 2.2,
+        height: Dimensions.get('window').height / 2.5,
         flex: 1,
     },
     imageContainer: {
@@ -34,4 +34,11 @@ export default StyleSheet.create({
         color: 'grey',
         textAlign: 'left'
     },
+    imageContainerInStock: {
+        margin: 10,
+        fontWeight: 'bold',
+        color: 'red',
+        textAlign: 'center'
+        
+    }
 });

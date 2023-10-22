@@ -14,14 +14,19 @@ export default function App() {
             <View>
               <Title></Title>
               <SearchBar></SearchBar>
-            </View>}
+            </View>
+          }
           showsVerticalScrollIndicator={false}
           data={product_data}
           keyExtractor={item => item.id.toString()}
-          renderItem={({ index, item }) => <ProductCard item={item} isLastItem={index === product_data.length - 1}></ProductCard>}
+          renderItem={({ index, item }) =>
+            <ProductCard
+              item={item}
+              isLastItem={index === product_data.length - 1}
+              inStock={item.inStock} />
+          }
           numColumns={2}
-        >
-        </FlatList>
+        />
       </View>
 
     </SafeAreaView>

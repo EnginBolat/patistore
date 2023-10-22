@@ -13,6 +13,7 @@ const ProductCard = (props) => {
                 <Text style={styles.imageContainerTitle}>{props.item.title}</Text>
                 <Text style={styles.imageContainerPrice}>{props.item.price}</Text>
             </View>
+            <Text style={styles.imageContainerInStock}>{!props.item.inStock && 'STOKTA YOK'}</Text>
         </View>
     );
 }
